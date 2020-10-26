@@ -1,0 +1,91 @@
+:root{
+    --primary-color:#4adbc4;
+}
+
+*{
+box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 15px;
+    background-color: #324a5e;
+    color: var(--primary-color);
+}
+
+
+img{
+    width: 300px;
+    height:300px;
+}
+
+
+.rateContainerOne,.rateContainerTwo{
+display:flex;
+align-items: center;
+justify-content: space-between;
+margin: 15px;
+/* border: 0.5px solid var(--primary-color); */
+border-radius: 10px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+padding: 50px;
+}
+
+
+.chooseRateOne,.chooseRateTwo{
+    margin-right:10px;
+    cursor: pointer;
+    
+}
+
+.rateAmountOne,.rateAmountTwo{
+    width:40%;
+    cursor: pointer;
+}
+
+.swapContainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.swap{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+
+.swap img{
+    width:50px;
+    height:45px;
+}
+
+
+select:focus,input:focus,.swap:focus{
+    outline:none;
+}
+
+select.chooseRateTwo, select.chooseRateOne,input.rateAmountOne,input.rateAmountTwo{
+    background-color: #f2f2f2;
+    border:2px solid;
+    border-color:#0ab3d6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+@media (max-width:600px){
+    
+img{
+    width: 200px;
+    height:200px;
+}
+}
